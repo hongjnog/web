@@ -1,0 +1,94 @@
+<style>
+    #up_table{
+        width: 218px;
+        word-break:break-all;
+        border-radius: 30px 30px 0 0;
+    
+    }
+    #down_table{
+        border-radius: 0 0 30px 30px;
+    }
+    table{
+        background-color: black;
+        color: white;
+    }
+     button{
+        background-color: darkgray;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        }
+    #div button{
+        background-color: #f9dc00;
+    }
+    #x button{
+        background-color: #f9dc00;
+    }
+    #b- button{
+        background-color: #f9dc00;
+    }
+    #brr button{
+        background-color: #f9dc00;
+    }
+    #pm button{
+        background-color: gray;
+    }
+    #bp button{
+        background-color:  #f9dc00;
+    }
+    #ac button{
+        background-color: gray;
+    }
+   
+    #na button{
+        background-color: gray;
+    }
+
+    
+
+</style>
+ <table>
+        <tr>
+        <table id="up_table">
+        <tr>
+            <td id="result">0</td>
+        </tr>
+        </table>
+         </tr>
+         <tr>
+
+         
+    <table id="down_table">
+    <tr>
+        <td id="ac"><button onclick="document.getElementById('result').innerHTML='0'">AC</button></td>
+        <td id="pm"><button>+/-</button></td>
+        <td id="na"><button>%</button></td>
+        <td id="div"><button>/</button></td>
+    </tr>
+    <tr>
+        <td id="b7"><button onclick="document.getElementById('result').innerHTML+='7'">7</button></td>
+        <td><button onclick="document.getElementById('result').innerHTML+='8'">8</button></td>
+        <td><button onclick="document.getElementById('result').innerHTML+='9'">9</button></td>
+        <td id="x"><button onclick="document.getElementById('result').innerHTML+='*'">x</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="document.getElementById('result').innerHTML+='4'">4</button></td>
+        <td><button onclick="document.getElementById('result').innerHTML+='5'">5</button></td>
+        <td><button onclick="document.getElementById('result').innerHTML+='6'">6</button></td>
+        <td id="b-"><button onclick="document.getElementById('result').innerHTML+='-'">-</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="document.getElementById('esult').innerHTML+='1'">1</button></td>
+        <td><button onclick="document.getElementById('result').innerHTML+='2'">2</button></td>
+        <td><button onclick="document.getElementById('result').innerHTML+='3'">3</button></td>
+        <td id="bp"><button onclick="document.getElementById('result').innerHTML+='+'">+</button></td>
+    </tr>
+        <tr>
+        <td id="0" colspan="2"><button onclick="document.getElementById('result').innerHTML+='0'">0</button></td>
+        <td><button onclick="document.getElementById('result').innerHTML+='.'">.</button></td>
+       
+        <td id="brr" ><button onclick="document.getElementById('result').innerHTML=eval(document.getElementById('result').innerHTML)" >=</button></td>
+        </tr>
+        </table>
+    </tr>
+</table>
